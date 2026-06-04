@@ -50,7 +50,7 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 	'https://github.com/Codist-Official/edupress/',
 	__FILE__,
 	'edupress'
-);
+); 
 
 class SmartCommerce { 
 
