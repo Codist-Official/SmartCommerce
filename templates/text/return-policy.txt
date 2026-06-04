@@ -1,0 +1,62 @@
+
+    <p>
+      <strong>Effective Date:</strong>
+      <time datetime="{date}">{date}</time><br />
+      <strong>Last Updated:</strong>
+      <time datetime="{last_updated}">{last_updated}</time>
+    </p>
+    <p>At <strong>{company}</strong>, we want you to be completely satisfied with your purchase. If for any reason you are not, we offer a simple return process under the following conditions:</p>
+
+  <main>
+    <section id="eligibility">
+      <h5>1. Eligibility for Returns</h5>
+      <ul>
+        <li>Products must be <strong>unused, undamaged, and in their original packaging</strong>.</li>
+        <li>The return request must be made <strong>within 7 days (1 week) of delivery</strong>.</li>
+        <li>Proof of purchase (receipt, invoice, or order number) is required.</li>
+      </ul>
+    </section>
+
+    <section id="non-returnable">
+      <h5>2. Non-Returnable Items</h5>
+      <ul>
+        <li>Products that show signs of use or damage.</li>
+        <li>Items returned without original packaging or missing parts.</li>
+        <li>Perishable, personalized, or clearance items.</li>
+      </ul>
+    </section>
+
+    <section id="process">
+      <h5>3. Return Process</h5>
+      <ol>
+        <li>Contact our support team at <a href="mailto:{email}">{email}</a> or call <a href="tel:{phone}">{phone}</a> within 7 days of delivery.</li>
+        <li>Provide your order number and reason for return.</li>
+        <li>Ship the product back to <span>{return_address}</span>.</li>
+        <li>Once inspected and approved, we will process your refund or exchange.</li>
+      </ol>
+    </section>
+
+    <section id="refunds">
+      <h5>4. Refunds</h5>
+      <ul>
+        <li>Approved refunds will be issued to your original payment method within <span>{refund_timeframe}</span> business days.</li>
+        <li>Shipping costs are <span>{refundable_or_nonrefundable}</span>.</li>
+      </ul>
+    </section>
+
+    <section id="exchanges">
+      <h5>5. Exchanges</h5>
+      <p>If you prefer, eligible items may be exchanged for another product of equal or higher value (price difference applies).</p>
+    </section>
+
+    <section id="contact-us">
+      <h5>6. Contact Us</h5>
+      <p>If you have questions about our return policy, please contact us at:</p>
+      <address>
+        <strong>{company}</strong><br />
+        {address}<br />
+        Email: <a href="mailto:{email}">{email}</a><br />
+        Phone: <a href="tel:{phone}">{phone}</a>
+      </address>
+    </section>
+  </main>

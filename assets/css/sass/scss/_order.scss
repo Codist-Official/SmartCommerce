@@ -1,0 +1,99 @@
+.sc-order-item-image{
+    width: 50px;
+    height: auto;
+}
+.sc-item-qty-btn{
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: var(--sc-border-radius);
+    margin: 0;
+    padding: 0!important;
+}
+.sc-item-qty-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+    input.sc-item-qty{
+        width: 30px !important;
+        padding: 3px !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
+        height: 20px !important;
+        border-radius: var(--sc-border-radius);
+        border-color: var(--sc-primary-color) !important;
+        text-align: center;
+    }
+}
+.sc-order-delivery{
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: var(--sc-border-radius);
+    border: 2px solid var(--sc-primary-color);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--sc-white-color);
+}
+button.sc-whatsapp{background-color: var(--sc-success-color);}
+button.sc-phone{background-color: var(--sc-info-color);}
+button.sc-order-now{background-color: var(--sc-primary-color);}
+form.sc-order-form table td select{
+    height: 20px !important;
+    padding: 0 3px !important;
+    line-height: 20px !important;
+    width: 100% !important;
+    max-width: 100px !important;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    font-size: 12px !important;
+}
+.sc-mobile-buttons button.sc-button{
+    width: 100% !important;
+    text-align: center !important;
+}
+.sc-messenger{
+    background-color: #1877F2 !important;
+}
+.sc-order-payable-html{
+    font-weight: bold;
+    margin-top: 0;
+    border: 2px solid var(--sc-accent-color);
+    padding: 10px;
+    border-radius: var(--sc-border-radius);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.sc-order-table{
+    &-img{
+        width: 50px;
+        text-align: center;
+    }
+    &-details{}
+    &-qty{
+        width: 100px;
+        text-align: center;
+    }
+    &-amt{
+        width: 75px;
+        text-align: center;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    .sc-order-table{
+        &-qty{
+            width: 50px;
+            text-align: center;
+        }    
+    }
+    
+    .sc-item-qty-btn{
+        display: block;
+    }
+}

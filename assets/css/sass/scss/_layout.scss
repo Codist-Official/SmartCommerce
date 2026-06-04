@@ -1,0 +1,45 @@
+.sc-flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sc-flex-gap);
+    flex: 1;
+    .flex{
+        &-1{
+            width: calc( var(--sc-base-col) * 1 - var(--sc-flex-gap) );
+        }
+        &-2{
+            width: calc( var(--sc-base-col) * 2 - var(--sc-flex-gap) );
+        }
+        &-3{
+            width: calc( var(--sc-base-col) * 3 - var(--sc-flex-gap) );
+        }
+        &-4{
+            width: calc( var(--sc-base-col) * 4 - var(--sc-flex-gap) );
+        }
+        &-5{
+            width: calc( var(--sc-base-col) * 5 - var(--sc-flex-gap) );
+        }
+        &-6{
+            width: calc( var(--sc-base-col) * 6 - var(--sc-flex-gap) );
+        }
+        &-7{
+            width: calc( var(--sc-base-col) * 7 - var(--sc-flex-gap) );
+        }
+        &-8{
+            width: calc( var(--sc-base-col) * 8 - var(--sc-flex-gap) );
+        }
+        &-9{
+            width: calc( var(--sc-base-col) * 9 - var(--sc-flex-gap) );
+        }
+        &-10{
+            width: calc( var(--sc-base-col) * 10 - var(--sc-flex-gap) );
+        }
+        &-11{
+            width: calc( var(--sc-base-col) * 11 - var(--sc-flex-gap) );
+        }
+        &-12{
+            width: calc( var(--sc-base-col) * 12 );
+        }
+        
+    }
+}

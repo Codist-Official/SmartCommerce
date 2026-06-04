@@ -1,0 +1,178 @@
+
+a,a:hover{
+    cursor: pointer !important;
+}
+
+
+.sc-table-wrap{
+    width: 100%;
+    overflow: auto;
+    display: inline-block;
+    table{
+        border-collapse: collapse;
+        &.sc-table{
+            width: 100%;
+            border-collapse: collapse;
+            thead{
+                tr{
+                    background-color: var(--sc-secondary-color) !important;
+                    color: var(--sc-white-color) !important;    
+                    th{
+                        text-align: left;
+                        font-size: 12px;
+                        font-weight: 500;
+                        padding: 10px 5px;
+                        vertical-align: middle;
+                        label{
+                            font-size: 12px;
+                            font-weight: 500;
+                            margin-bottom: 0;
+                            line-height: 15px;
+                        }
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        padding: 10px 5px;
+                        border: none !important;
+                        font-size: 12px;
+                        vertical-align: middle;
+                    }
+                    &:nth-child(odd){
+                        background-color: var(--sc-white-color) !important;
+                    }
+                    &:nth-child(even){
+                        background-color: var(--sc-secondary-bg-color);
+                    }
+                }
+            }
+            thead,
+            tbody,
+            tfoot{
+                td{
+                    font-size: var(--sc-base-font-size);
+                }
+            }
+        }
+    }
+}
+
+.sc{
+    &-fright{float: right};
+    &-fleft{float: left};
+    &-mb-20{margin-bottom: 20px};
+    &-mb-10{margin-bottom: 10px};
+    &-mb-5{margin-bottom: 5px};
+    &-mb-0{margin-bottom: 0};
+    &-mt-20{margin-top: 20px};
+    &-mt-10{margin-top: 10px};
+    &-mt-5{margin-top: 5px};
+    &-mt-0{margin-top: 0};
+    &-icon-link{ 
+        display: inline-block; 
+        text-decoration: none !important;
+    }
+}
+
+.sc-default-img-holder{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-top: 5px;
+    span{
+        height: var(--sc-img-holder-size);
+        width: var(--sc-img-holder-size);
+        display: inline-block;
+        margin: 5px 5px 0 0;
+        border-radius: var(--sc-border-radius);
+        overflow: hidden;
+        background: url('../img/image-placeholder.png') no-repeat center center / cover;
+        background-size: cover;    
+    }
+}
+
+.sc-page-title{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.sc-icon-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid var(--sc-primary-color);
+    color: var(--sc-primary-color);
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    &:hover{
+        background-color: var(--sc-secondary-color);
+        border-color: var(--sc-secondary-color);
+        color: var(--sc-white-color);    
+    }
+}
+
+.sc-pagination ul{
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: calc(var(--sc-flex-gap)/2);
+    li{
+        list-style: none;
+        width: auto;
+        span.current{
+            font-size: var(--sc-base-font-size);
+            padding: 5px 15px;
+            background-color: var(--sc-primary-color);
+            color: var(--sc-white-color);
+        }
+        a{
+            text-decoration: none;
+            color: var(--sc-white-color);
+            font-size: var(--sc-base-font-size);
+            padding: 5px 15px;
+            border: none;
+            background-color: var(--sc-secondary-color);
+            font-size: var(--sc-base-font-size);
+            &:hover{
+                background-color: var(--sc-primary-color);
+                color: var(--sc-white-color);
+            }
+        }
+    }
+}
+
+.sc-icons-wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    a{
+        text-decoration: none !important;
+    }
+}
+
+.sc-inline-form-field{
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 3px;
+    line-height: 1em;
+    label{
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 0;
+        line-height: 1em;
+        width: inherit !important;
+        display: inline-block !important;
+        max-width: 100px;
+    }
+}
+

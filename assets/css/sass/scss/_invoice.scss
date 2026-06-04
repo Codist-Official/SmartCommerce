@@ -1,0 +1,23 @@
+.sc-invoice-wrap{
+    width: 100%;
+    .sc-invoice-title{
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .sc-invoice-header{
+        display: inline-block;
+        width: 100%;
+        .sc-invoice-header-left{
+            width: 50%;
+            float: left;
+            background-color: blue;
+        }
+        .sc-invoice-header-right{
+            width: 50%;
+            float: right;
+            background-color: red;
+        }
+    }
+   
+}

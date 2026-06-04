@@ -1,0 +1,248 @@
+/* Buttons */
+.sc-button,
+input.sc-button,
+button.sc-button{
+    display: inline-block;
+    margin: 0;
+    padding: 7px 15px;
+    background-color: var(--sc-accent-color);
+    color: var(--sc-white-color);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1em;
+    text-decoration: none !important;
+    border-radius: var(--sc-border-radius);
+    border: none;
+    cursor: pointer !important;
+    &:hover{
+        background-color: var(--sc-secondary-color);
+        color: var(--sc-white-color);    
+    }
+    &.sc-button-fadeout{
+        background-color: var(--sc-white-color);
+        color: var(--sc-accent-color);
+        &:hover{
+            background-color: var(--sc-accent-color);
+        }
+        &:hover{
+            background-color: var(--sc-accent-color);
+            color: var(--sc-white-color);
+        }
+    }
+}
+
+form.sc-form{
+    display: flex;
+    flex-direction: column;
+    .sc-form-group{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 50px;
+        border-radius: var(--sc-border-radius);
+        background-color: var(--sc-white-color);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        display: inline-block;
+        .sc-form-group-title{
+            width: 100%;
+            display: inline-block;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: center;
+            text-align: center;
+        }
+        &[data-form-group='sidebar']{
+            background-color: var(--sc-secondary-bg-color);
+            margin-bottom: 15px;
+            .sc-form-row{
+                background-color: var(--sc-white-color);
+                padding: 10px;
+                border-radius: var(--sc-border-radius);
+                box-sizing: border-box;
+            }
+        }
+    }
+    .sc-form-row{
+        width: 100%;
+        height: auto;
+        margin: 0 0 10px;
+        padding: 0 20px 0 0;
+        box-sizing: border-box;
+        display: inline-block;
+        float:left;
+        
+        input,
+        textarea,
+        select{
+            width: 100%;
+            &[type='checkbox'],
+            &[type='radio']{
+                width: 15px;
+                height: 15px;
+                margin: 0 5px 0 0;
+                float: left;
+            }
+            &[type='color']{
+                height: 40px !important;
+                width: 100px !important;
+            }
+        }
+        .checkbox-item-wrap{
+            display: flex;
+            align-items: center;
+            margin-bottom: 3px;
+            label{
+                display: inline-block;
+                margin: 0px 10px 0px 0px;
+            }
+        }
+
+        &.col-1{
+            width: 100%;
+        }
+        &.col-2{
+            width: 50%;
+        }
+        &.col-3{
+            width: 33.33%;
+        }
+        &.col-4{
+            width: 25%;
+        }
+        &.col-5{
+            width: 20%;
+        }
+        &.col-6{
+            width: 16.66%;
+        }
+    }
+    .sc-order-actions{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+body{
+    label{
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        line-height: 15px;
+        &[for^='id_']{
+            margin-bottom: 0;
+        }
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="date"],
+    input[type="time"],
+    input[type="datetime-local"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    input[type="checkbox"],
+    input[type="radio"],
+    select, textarea{
+        width: auto;
+        padding: 5px 10px;
+        border: 1px solid var(--sc-border-color);
+        border-radius: var(--sc-border-radius);
+        background-color: var(--sc-white-color) !important;
+        font-size: 14px;
+        color: var(--sc-text-color);
+        box-sizing: border-box;
+        display: inline-block;
+        &::placeholder{
+            font-size: 14px;
+            color: var(--sc-text-color);
+        }
+    }
+    input{
+        &[type='file']{
+            padding: 0 !important;
+            border: none !important;
+            background-color: transparent !important;
+            font-size: 14px;
+            color: var(--sc-text-color);
+            &::placeholder{
+                font-size: 14px;
+            }
+        }
+        &[type='checkbox'],
+        &[type='radio']{
+            width: 15px;
+            height: 15px;
+            margin: 0 5px 0 0;
+            float: left;
+            border: 1px solid var(--sc-border-color);
+            border-radius: var(--sc-border-radius);
+            background-color: var(--sc-white-color);
+        }
+        &[type='color']{
+            height: 40px !important;
+            width: 100px !important;
+        }
+        &[type='button'],
+        &[type='submit']{
+            width: auto !important;
+        }
+    }
+    button{
+        &[type='button'],
+        &[type='submit']{
+            width: auto !important;
+        }
+    }
+    textarea{
+        min-height: 100px;
+    }
+}
+
+/* Hide arrows in Chrome, Safari, Edge, Opera */
+.no-arrows::-webkit-outer-spin-button,
+.no-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide arrows in Firefox */
+.no-arrows[type=number] {
+  -moz-appearance: textfield;
+}
+
+.inline{
+    &-input,
+    &-select{
+        width: 75px !important;
+        height: 20px !important;
+        line-height: 20px !important;
+        box-sizing: border-box !important;
+        font-size: 12px !important;
+        padding: 0 3px !important;
+        &::placeholder{
+            font-size: 12px !important;
+        }
+    }
+    &-textarea{
+        width: 100% !important;
+        height: 50px !important;
+        resize: vertical !important;
+        font-size: 12px !important;
+        min-height: inherit !important;
+        &::placeholder{
+            font-size: 12px !important;
+        }
+    }
+    
+}
+
+.sc-order-delivery .sc-form-row{
+    padding: 0 !important;
+}

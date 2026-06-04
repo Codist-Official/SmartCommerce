@@ -1,0 +1,79 @@
+<p>
+    <strong>Effective Date:</strong>
+    <time datetime="{date}">{date}</time><br />
+    <strong>Last Updated:</strong>
+    <time datetime="{last_updated}">{last_updated}</time>
+</p>
+<p>Welcome to <strong>{company}</strong>! These Terms and Conditions (“Terms”) govern your use of our website located at <a href="{website}">{website}</a> and the services we provide. By accessing or using our services, you agree to be bound by these Terms.</p>
+
+<main>
+<section id="definitions">
+    <h5>1. Definitions</h5>
+    <ul>
+    <li><strong>Company:</strong> {company}, located at {address}, referred to as “we,” “our,” or “us.”</li>
+    <li><strong>Website:</strong> {website}</li>
+    <li><strong>User/You:</strong> Any individual or entity accessing or using our website or services.</li>
+    <li><strong>Services:</strong> All products, features, and offerings provided by {company}.</li>
+    </ul>
+</section>
+
+<section id="use-of-services">
+    <h5>2. Use of Our Services</h5>
+    <ul>
+    <li>You must be at least {minimum_age} years old to use our services.</li>
+    <li>You agree to use our website and services only for lawful purposes.</li>
+    <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
+    </ul>
+</section>
+
+<section id="intellectual-property">
+    <h5>3. Intellectual Property</h5>
+    <p>All content, logos, trademarks, and materials on <a href="{website}">{website}</a> are the property of {company} or its licensors. You may not reproduce, distribute, or exploit any content without prior written consent.</p>
+</section>
+
+<section id="payments">
+    <h5>4. Payments &amp; Billing</h5>
+    <ul>
+    <li>Prices for services are listed in {currency}.</li>
+    <li>Payments must be made through {payment_methods}.</li>
+    <li>By providing payment information, you authorize {company} to charge your account for the agreed fees.</li>
+    </ul>
+</section>
+
+<section id="liability">
+    <h5>5. Limitation of Liability</h5>
+    <p>{company} is not liable for indirect, incidental, or consequential damages arising from the use of our services. Our total liability is limited to the amount paid by you for the services.</p>
+</section>
+
+<section id="termination">
+    <h5>6. Termination</h5>
+    <p>We reserve the right to suspend or terminate your account if you violate these Terms.</p>
+</section>
+
+<section id="governing-law">
+    <h5>7. Governing Law</h5>
+    <p>These Terms are governed by the laws of {country}, without regard to conflict of law principles.</p>
+</section>
+
+<section id="disputes">
+    <h5>8. Dispute Resolution</h5>
+    <p>Any disputes will be resolved through {arbitration/mediation/court}, located in {jurisdiction}.</p>
+</section>
+
+<section id="changes">
+    <h5>9. Changes to Terms</h5>
+    <p>We may update these Terms at any time. Changes will be effective upon posting the updated version on <a href="{website}">{website}</a>.</p>
+</section>
+
+<section id="contact-us">
+    <h5>10. Contact Us</h5>
+    <p>If you have questions about these Terms &amp; Conditions, contact us:</p>
+    <address>
+    <strong>{company}</strong><br />
+    {address}<br />
+    Website: <a href="{website}">{website}</a><br />
+    Email: <a href="mailto:{email}">{email}</a><br />
+    Phone: <a href="tel:{phone}">{phone}</a>
+    </address>
+</section>
+</main>

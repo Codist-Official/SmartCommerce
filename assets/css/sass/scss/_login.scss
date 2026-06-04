@@ -1,0 +1,49 @@
+.sc-login-form,
+.sc-register-form,
+.sc-reset-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    gap: var(--sc-flex-gap);
+    z-index: 999;
+    &.sc-full-screen{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .logo-wrap{
+        width: 100%;
+        max-width: 200px;
+        max-height: 200px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+    form{
+        width: 100%;
+        max-width: 300px;
+        .sc-form-group{
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    }
+}
+
+.sc-popup{
+    .sc-login-form,
+    .sc-register-form,
+    .sc-reset-form{
+        background-color: var(--sc-white-color);
+        height: 100%;
+    }
+}

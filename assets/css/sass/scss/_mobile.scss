@@ -1,0 +1,94 @@
+@media screen and (max-width: 1024px) {
+
+    .desktop-only{
+        display: none;
+    }
+    .mobile-only{
+        display: inherit;
+    }
+
+    div, p, ul, ol, li, th, td{
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    table.sc-order tr th, 
+    table.sc-order tr td{
+        font-size: 12px !important;
+        padding: 3px !important;
+    }
+
+    .product-loop.template-default{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .sc-dashboard{
+        position: relative !important;
+        .sc-sidebar{
+            height: auto;
+            align-items: center;
+            padding: 10px 20px;
+            gap: calc( var(--sc-flex-gap) / 2);
+            width: 100% !important;
+            .sc-welcome-message{
+                text-align: center;
+                width: 100%;
+                padding: 0;
+                .sc-welcome-message-logo{
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .sc-mobile-admin-menu{
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        .sc-content{
+            height: auto;
+            padding-bottom: 150px;
+            .sc-dashboard-items{
+                grid-template-columns: repeat(1, 1fr);
+                gap: calc( var(--sc-flex-gap) / 2);
+            }
+            .sc-action-bar,
+            .sc-bulk-actions,
+            .sc-filter-wrap,
+            form{
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    }
+    .sc-flex-wrap{
+        .flex-1,
+        .flex-3,
+        .flex-4,
+        .flex-5,
+        .flex-6,
+        .flex-7,
+        .flex-8,
+        .flex-9,
+        .flex-10,
+        .flex-11,
+        .flex-12{
+            width: 100%;
+            gap: 0;
+        }
+        .flex-2{
+            width: 50%;
+        }
+    }
+
+    .container-wrap{
+        .container{
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+    }
+
+    
+
+}
+

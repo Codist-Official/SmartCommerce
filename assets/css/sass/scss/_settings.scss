@@ -1,0 +1,41 @@
+ul.sc-settings-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+        list-style: none;
+        a{
+            display: flex;
+            font-size: 14px;
+            align-items: center;
+            border-bottom: 1px solid var(--sc-border-color);
+            text-decoration: none;
+            padding: 5px 10px;
+            &:hover{
+                background-color: var(--sc-primary-color);
+                color: var(--sc-white-color);
+            }
+            &:active{
+                background-color: var(--sc-primary-color);
+                color: var(--sc-secondary-color);
+            }
+            i{
+                margin-right: 5px;
+                width: 15px;
+                font-size: .7em;
+                align-self: center;
+            }
+        }
+        &.active{
+            a{
+                background-color: var(--sc-primary-color);
+                color: var(--sc-white-color);
+            }
+        }
+    }
+}
+
+
+textarea#delivery_charges{
+    height: 300px;
+}
