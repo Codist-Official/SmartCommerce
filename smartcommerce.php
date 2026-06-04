@@ -5,7 +5,7 @@ namespace SmartCommerce;
 /**
  * Plugin Name: SmartCommerce 
  * Author: Nur Hossain
- * Version: 1.0.0
+ * Version: 1.0.1
  * Description: A smart commerce plugin for WordPress.
  * Text Domain: smartcommerce
  * Domain Path: /languages
@@ -47,9 +47,9 @@ require SMART_COMMERCE_LIB_DIR . 'plugin-update-checker/plugin-update-checker.ph
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://github.com/Codist-Official/edupress/',
+	'https://github.com/Codist-Official/smartcommerce/',
 	__FILE__,
-	'edupress'
+	'smartcommerce'
 ); 
 
 class SmartCommerce { 
