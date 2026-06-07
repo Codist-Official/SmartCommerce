@@ -475,13 +475,13 @@ class Order extends Post {
     public function getNet($formatted = false)
     {
         $amount = (float) $this->getTotal() - (float) $this->getDiscount() + (float) $this->getDeliveryCharge();
-        return $formatted ? number_format($amount, 2) : $amount;
+        return $formatted ? number_format($amount, 2) : (float) $amount;
     }
 
     function getDeliveryCharge($formatted = false)
     {
         $delivery = (float) isset($this->metadata['delivery_charge']) ? $this->metadata['delivery_charge'][0] : 0;
-        return $formatted ? number_format($delivery, 2) : $delivery;
+        return $formatted ? number_format($delivery, 2) : (float) $delivery;
     }
 
     function getPayableAmount($formatted = false)

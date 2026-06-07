@@ -39,7 +39,8 @@ class MetaPixel {
 
     public function metaPixel()
     {
-        if(empty($this->pixel_id)) return;
+        $is_localhost = str_contains($_SERVER['HTTP_HOST'], 'localhost');
+        if(empty($this->pixel_id) || $is_localhost) return;
         ob_start();
         $user_data = $this->generateUserData();
         $hashed_fields = array('first_name', 'last_name', 'email', 'full_name', 'phone', 'fn', 'ln', 'em', 'ph');

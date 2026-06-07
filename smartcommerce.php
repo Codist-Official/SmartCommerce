@@ -181,6 +181,11 @@ class SmartCommerce {
         foreach( glob(SMART_COMMERCE_THEME_CLASS_DIR . '*.php') as $file ){
             require_once $file;
         }
+
+        // include delivery files 
+        foreach( glob(SMART_COMMERCE_CLASS_DIR . 'delivery/*.php') as $file ){
+            require_once $file;
+        }
     }
 
     /**

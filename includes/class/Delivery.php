@@ -38,6 +38,25 @@ class DeliveryPartner extends Post {
     }
 
     /**
+     * Get delivery partner list 
+     * 
+     * @return array
+     * @since 1.0.1
+     */
+    public static function getDeliveryPartnerList($sanitized = false)
+    {
+        $partners = ['Steadfast', 'RedX', 'Pathao Courier', 'eCourier', 'Delivery Tiger'];
+        if(!$sanitized) return $partners;
+        $partner_list = [];
+        foreach($partners as $partner){
+            $k = strtolower(trim(str_replace(' ', '-', $partner)));
+            $partner_list[$k] = $partner;
+        }
+        return $partner_list;
+        
+    }
+
+    /**
      * Set up API Data  
      * 
      * @return void
@@ -73,6 +92,17 @@ class DeliveryPartner extends Post {
     public function filterPublishFields($fields)
     {
         unset($fields['submit']);
+        $fields['post_title'] = array(
+            'type' => 'select',
+            'name' => 'post_title',
+            'settings' => array(
+                'label' => __('Title', 'smartcommerce'),
+                'value' => isset($this->post->post_title) ? $this->post->post_title : '',
+                'options' => self::getDeliveryPartnerList(),
+                'required' => true,
+                'class' => 'regular-text',
+            ),
+        );
         $fields['api_key'] = array(
             'type' => 'text',
             'name' => 'api_key',

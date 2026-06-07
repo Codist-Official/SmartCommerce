@@ -418,6 +418,7 @@ window.publishPostSuccessCallback = function(res){
     clog(res);
     hideLoading();
     showStatus( res.data.status ? 'success' : 'error', res.data.message);
+    return;
     if(res.data.status){
         setTimeout(function(){
             window.location.href = smartcommerce.site_url + '/dashboard/?submenu=' + res.data.post_type;

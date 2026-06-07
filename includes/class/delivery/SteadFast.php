@@ -3,7 +3,7 @@ namespace SmartCommerce;
 
 defined('ABSPATH') || die();
 
-class DeliverySteadFast extends DeliveryPartner{
+class SteadFast extends DeliveryPartner{
 
     /**
      * $_instance 
@@ -170,4 +170,4 @@ class DeliverySteadFast extends DeliveryPartner{
     }
 }
 
-DeliverySteadFast::instance();
+SteadFast::instance();
